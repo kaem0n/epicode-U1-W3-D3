@@ -7,20 +7,23 @@ form.addEventListener('submit', function(e) {
         alert('Il campo è vuoto!')
     } else {
         const listBlock = document.createElement('div')
+        listBlock.classList.add('task')
         listBlock.innerHTML = `
-        <span class="listItem"></i> ${input.value}</span>
-        <button class="eraser"><i class="fas fa-eraser"></i></button>
+        <span class="listItem" onclick="barred(event)"></i> ${input.value}</span>
+        <button class="eraser" onclick="cancel(event)"><i class="fas fa-eraser"></i></button>
         `
         list.appendChild(listBlock)
         input.value = ''
     }
-    
-    // document.getElementsByclass('listItem').addEventListener('click', function () {
-    //     listItem.classList.add('barred')
-    // })
-
-    // document.getElementsByclass('eraser').addEventListener('click', function () {
-    //     listItem.classList.add('cancel')
-    //     eraser.classList.add('cancel')
-    // })
 })
+
+const barred = function (e) {
+    console.log(e)
+    console.log(e.target)
+    e.target.classList.add('barred')
+}
+
+const cancel = function (e) {
+    console.log(e.target)
+    e.target.closest('.task').classList.add('cancel')
+}
