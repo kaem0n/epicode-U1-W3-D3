@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Patrick+Hand&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    background-color: #FF8080;
+}
+
+main {
+    background-color: #CDFAD5;
+    padding: 40px;
+    height: 76vh;
+}
+
+header {
+    height: 10vh;
+}
+
+footer {
+    height: 5vh;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 4em;
+    text-transform: capitalize;
+}
+
+form {
+    margin-bottom: 40px;
+}
+
+section {
+    font-size: 1.2em;
+    background-color: #F6FDC3;
+    height: 80%;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+input {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.2em;
+    text-align: center;
+    border: none;
+    height: 30px;
+    width: 280px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+form button {
+    background-color: #F6FDC3;
+    color: #966d45;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    vertical-align:top;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+section div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+section span {
+    color: #966d45;
+    width: 100%;
+    border-bottom: 1px solid #FFCF96;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+section button {
+    width: 10%;
+    border: none;
+    color: #966d45;
+    background-color: #F6FDC3;
+    font-size: 1em;
+}
+
+footer span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    opacity: 80%;
+}
+
+.barred {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.cancel {
+    display: none;
+}
